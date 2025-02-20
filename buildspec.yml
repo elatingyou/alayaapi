@@ -10,17 +10,17 @@ phases:
     commands:
       - echo Restore started on `date`
       - echo "CURRENT DIR `pwd`"
-      - dotnet restore alayaapi/alayaapi/alayaapi.csproj
+      - dotnet restore alayaapi/alayaapi.csproj
 
   build:
     commands:
       - echo Build started on `date`
-      - dotnet build alayaapi/alayaapi/alayaapi.csproj
+      - dotnet build alayaapi/alayaapi.csproj
 
   post_build:
     commands:
       - echo Publish started on `date`
-      - dotnet publish -c Release -o ./build-output alayaapi/alayaapi/alayaapidemo.api.csproj
+      - dotnet publish -c Release -o ./build-output alayaapi/alayaapidemo.api.csproj
 
 artifacts:
   name: DEMO_API_Build_#$CODEBUILD_BUILD_NUMBER
