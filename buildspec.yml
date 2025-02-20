@@ -20,7 +20,7 @@ phases:
   post_build:
     commands:
       - echo Publish started on `date`
-      - dotnet publish -c Release -o ./build-output alayaapi/alayaapidemo.api.csproj
+      - dotnet publish -c Release -o ./build-output alayaapi/alayaapi.csproj
 
 artifacts:
   name: DEMO_API_Build_#$CODEBUILD_BUILD_NUMBER
