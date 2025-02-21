@@ -8,6 +8,9 @@
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <!--AWS-->
+    <PackageReference Include="Amazon.Lambda.AspNetCoreServer.Hosting" Version="1.7.3" />
+    <PackageReference Include="AWSSDK.Core" Version="3.7.400.78" />
   </ItemGroup>
 
 </Project>
